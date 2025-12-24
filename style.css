@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #58a6e2;
+}
+
+h1 {
+    text-align: center;
+}
+
+.box {
+    width: 400px;
+    margin: 20px auto;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.hidden {
+    display: none;
+}
+#username {
+    width: 90% !important;
+    box-sizing: border-box;
+}
+
+input, select, button {
+    width: 90%;
+    margin-top: 10px;
+    margin-right: 5%;
+   
+    padding: 8px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f0f0f0;
+    margin: 5px 0;
+    padding: 6px;
+}
