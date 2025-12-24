@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Course Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Student Course Registration System</h1>
+
+<!-- LOGIN -->
+<div id="loginBox" class="box">
+    <h2>Login</h2>
+    <select id="role">
+        <option value="student">Student</option>
+        <option value="admin">Admin</option>
+    </select>
+    <input type="text" id="username" placeholder="Username">
+    <button onclick="login()">Login</button>
+</div>
+
+<!-- STUDENT PANEL -->
+<div id="studentPanel" class="box hidden">
+    <h2>Available Courses</h2>
+    <ul id="courseList"></ul>
+
+    <h3>Enroll in a Course</h3>
+    <select id="courseSelect"></select>
+    <button onclick="enrollCourse()">Enroll</button>
+
+    <h3>Registered Courses</h3>
+    <ul id="registeredCourses"></ul>
+
+    <button onclick="logout()">Logout</button>
+</div>
+
+<!-- ADMIN PANEL -->
+<div id="adminPanel" class="box hidden">
+    <h2>Admin Panel</h2>
+    <input type="text" id="newCourse" placeholder="New Course Name">
+    <button onclick="addCourse()">Add Course</button>
+
+    <h3>Course List</h3>
+    <ul id="adminCourseList"></ul>
+
+    <button onclick="logout()">Logout</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
